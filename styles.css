@@ -197,6 +197,19 @@ button:hover {
     animation-delay: 2s !important;
 }
 
+.Java {
+    top: 45%;
+    right: -45px;
+    animation-delay: 2s !important;
+}
+
+.Csharp {
+    bottom: -30px;
+    left: 5%;
+    animation-delay: 1s !important;
+}
+
+
 /* Floating movement */
 @keyframes float {
     0%, 100% {
