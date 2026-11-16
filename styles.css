@@ -354,3 +354,39 @@ header nav {
     z-index: 4;
 }
 
+
+/* RK's card code starts here -------- */
+.rk-card {
+    background: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #00ff9c;
+    font-family: "Courier New", monospace;
+}
+.rk-card h2 { color: #00ff9c; }
+.rk-card .bio { color: #c9d1d9; }
+.rk-card button,
+.rk-card .social-links a { background: #00a86b; font-family: "Courier New", monospace; }
+.rk-card button:hover,
+.rk-card .social-links a:hover { background: #007a4d; }
+.rk-avatar { border-color: #00ff9c; box-shadow: 0 0 12px #00ff9c; }
+
+/* RK's moodboard grid */
+.rk-mood-title { color: #00ff9c; margin-top: 15px; }
+.rk-moodboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+.rk-tile {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 24px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+.rk-tile img { width: 28px; height: 28px; }
+.rk-tile span { display: block; font-size: 12px; margin-top: 5px; }
+.rk-tile:hover { transform: translateY(-3px); border-color: #00ff9c; }
+/* RK's card code ends here ---------- */
