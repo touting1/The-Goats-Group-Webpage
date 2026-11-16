@@ -1,0 +1,392 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8A2BE2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styling for team logo image */
+/* Header with animated goat background */
+header {
+    position: relative;
+    background: #333;
+    color: white;
+    min-height: 450px;
+    padding: 30px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Make the goat GIF fill the header */
+.team-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+/* Keep text and buttons above the GIF */
+header h1,
+header h2,
+header nav {
+    position: relative;
+    z-index: 2;
+}
+/* Move Meet Our Team above the buttons */
+header .meet-team-heading {
+    position: absolute;
+    bottom: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin: 0;
+    z-index: 3;
+}
+
+/* Dark overlay for readability */
+header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* Position navigation buttons at bottom of header */
+header nav {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    z-index: 3;
+}
+
+
+/* Menu button styling */
+header nav {
+    margin-top: 10px;
+}
+
+header nav button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+header nav button:hover {
+    background: #0056b3;
+}
+
+/* Flex container for team bios and vision sections */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Card styling for individual team bios */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin: 0 0 10px;
+}
+
+/* Initially hide bio details */
+.bio {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Button styling */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+/*Tyreeks card code starts here -------- */
+/* Floating bio card */
+.floating-card {
+    position: relative;
+    overflow: visible;
+    isolation: isolate;
+    margin: 50px 25px;
+}
+
+/* Programming language logos */
+.floating-logos .logo {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    animation: float 3s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Position each logo around the card */
+.python {
+    top: -35px;
+    left: 5%;
+}
+
+.javascript {
+    top: -35px;
+    right: 5%;
+    animation-delay: 0.5s !important;
+}
+
+.c {
+    bottom: -30px;
+    left: 5%;
+    animation-delay: 1s !important;
+}
+
+.html {
+    bottom: -35px;
+    right: 5%;
+    animation-delay: 1.5s !important;
+}
+
+.css {
+    top: 45%;
+    right: -25px;
+    animation-delay: 2s !important;
+}
+
+.Java {
+    top: 45%;
+    right: -45px;
+    animation-delay: 2s !important;
+}
+
+.Csharp {
+    bottom: -30px;
+    left: 5%;
+    animation-delay: 1s !important;
+}
+
+
+/* Floating movement */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Pet photo section */
+.pets-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pets-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.pets-photo {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #805ad5;
+    transition: transform 0.3s ease;
+}
+
+/* Enlarge pet photo slightly when hovered */
+.pets-photo:hover {
+    transform: scale(1.05);
+}
+
+/* LinkedIn and GitHub links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Match the original Show Bio buttons */
+.social-links a {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13.3333px;
+    font-weight: normal;
+}
+
+/* Match the original button hover effect */
+.social-links a:hover {
+    background: #0056b3;
+}
+/* Tyreek's profile avatar */
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #007BFF;
+    display: block;
+    margin: 0 auto 15px;
+}
+/* Tyreeks card code ends here---------- */
+
+/* The Goats Team Vision */
+.team-vision {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.team-vision h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.team-vision p {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.team-vision ul {
+    line-height: 2;
+    color: #555;
+    padding-left: 25px;
+}
+
+
+
+/* Official Goats team logo */
+.official-logo {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+    border-radius: 10px;
+}
+
+/* Smooth transition between header and body */
+header::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(138, 43, 226, 0.5) 50%,
+        #8A2BE2 100%
+    );
+
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Keep navigation above the gradient */
+header nav {
+    z-index: 4;
+}
+
+
+/* RK's card code starts here -------- */
+.rk-card {
+    background: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #00ff9c;
+    font-family: "Courier New", monospace;
+}
+.rk-card h2 { color: #00ff9c; }
+.rk-card .bio { color: #c9d1d9; }
+.rk-card button,
+.rk-card .social-links a { background: #00a86b; font-family: "Courier New", monospace; }
+.rk-card button:hover,
+.rk-card .social-links a:hover { background: #007a4d; }
+.rk-avatar { border-color: #00ff9c; box-shadow: 0 0 12px #00ff9c; }
+
+/* RK's moodboard grid */
+.rk-mood-title { color: #00ff9c; margin-top: 15px; }
+.rk-moodboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+.rk-tile {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 24px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+.rk-tile img { width: 28px; height: 28px; }
+.rk-tile span { display: block; font-size: 12px; margin-top: 5px; }
+.rk-tile:hover { transform: translateY(-3px); border-color: #00ff9c; }
+/* RK's card code ends here ---------- */

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<header>
+    <!-- The Goats official team logo -->
+    <img src="img/team_logo.png"
+         alt="The Goats Software Development Team Logo"
+         class="official-logo">
+    <h2 class="meet-team-heading">Meet Our Team</h2>
+
+    <!-- Example team logo -->
+    <img src="img/goat-logo.gif" alt="The Goats Logo" class="team-logo">
+
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
+
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <!-- Each card represents an individual team member -->
+
+<div class="card floating-card">
+
+    <div class="floating-logos">
+        <img src="img/python.svg" class="logo python" alt="Python">
+        <img src="img/javascript.svg" class="logo javascript" alt="JavaScript">
+        <img src="img/c.svg" class="logo c" alt="C">
+        <img src="img/html.svg" class="logo html" alt="HTML">
+        <img src="img/css.svg" class="logo css" alt="CSS">
+    </div>
+
+
+    <img src="img/tyreeks_avatar.png"
+         alt="Tyreek's Avatar"
+         class="profile-avatar">
+
+    <h2>Tyreek Outing</h2>
+    <p>Frontend Developer</p>
+
+    <button onclick="toggleBio('bio1')">Show Bio</button>
+    <div id="bio1" class="bio">
+        <p>
+            Tyreek is a Senior at UNCC, who aspires to be a
+            frontend developer. He loves creating responsive
+            web applications to show off his skills.
+        </p>
+        <!-- section for my pets -->
+        <div class="pets-section">
+        <h3>Meet My Pets!</h3>
+        <img src="img/tyreeks_pets.png"
+             alt="A picture of my pets"
+             class="pets-photo">
+            <p>Apple the Goldendoodle and Kon the Cat</p>
+        </div>
+
+        <!-- Social media links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tyreek-outing-9ba874283"
+               target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/touting1"
+               target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+    <div class="card">
+        <h2>Elijah Clayton</h2>
+        <p>Backend Developer</p>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
+    </div>
+
+
+    <!-- Gavin Bio Card -->
+    <div class="card floating-card">
+
+        <div class="floating-logos">
+            <img src="img/python.svg" class="logo python" alt="Python">
+            <img src="img/Csharp_logo.png" class="logo Csharp" alt="Csharp">
+            <img src="img/Java_logo.png" class="logo Java" alt="Java">
+        </div>
+
+        <img src="img/Gavin_profile_pic.jpg"
+         alt="Gavin Profile Pic"
+         class="profile-avatar">
+
+        <h2>Gavin Bigos</h2>
+        <p>Data Scientist</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">Gavin Bigos is a senior at UNCC who wants to work in the machine learning and data science field.</p>
+
+
+            <!-- Social media links -->
+            <div class="social-links">
+                <a href="https://github.com/Gavin435-5714"
+                   target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </div>
+
+    </div>
+
+
+    <div class="card">
+        <h2>Robby Johnson</h2>
+        <p>UI/UX Designer</p>
+        <button onclick="toggleBio('bio4')">Show Bio</button>
+        <p id="bio4" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+    </div>
+    <!-- RK Bio Card -->
+    <div class="card floating-card rk-card">
+        <div class="floating-logos">
+            <img src="img/python.svg" class="logo python" alt="Python">
+            <img src="img/javascript.svg" class="logo javascript" alt="JavaScript">
+            <img src="img/html.svg" class="logo html" alt="HTML">
+        </div>
+
+        <img src="rk_avatar.jpg" alt="RK's Avatar" class="profile-avatar rk-avatar">
+
+        <h2>RK Ramalingam Kannan</h2>
+        <p>Cybersecurity &amp; Tech Risk</p>
+
+        <button onclick="toggleBio('bio5')">Show Bio</button>
+        <div id="bio5" class="bio">
+            <p>
+                RK is a senior at UNCC majoring in Computer Science with a
+                concentration in Cybersecurity. After interning in tech risk
+                consulting, he's interested in how security and risk
+                management keep systems trustworthy.
+            </p>
+
+            <!-- RK's moodboard -->
+            <h3 class="rk-mood-title">My Moodboard</h3>
+            <div class="rk-moodboard">
+                <div class="rk-tile">🔐<span>Zero Trust</span></div>
+                <div class="rk-tile">🛡️<span>Threat Modeling</span></div>
+                <div class="rk-tile"><img src="img/python.svg" alt="Python"><span>Python Scripting</span></div>
+                <div class="rk-tile">🕵️<span>CTF Challenges</span></div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/sramali1-creator" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer">OWASP Top 10</a>
+                <a href="https://tryhackme.com" target="_blank" rel="noopener noreferrer">TryHackMe</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Vision and Mission Statement -->
+<div id="vision" class="container" style="display: none;">
+
+    <div class="team-vision">
+        <h2>Our Mission - The Goats</h2>
+
+        <p>
+            At The Goats, our mission is to work together
+            to create innovative and useful software.
+            As computer science students, we bring
+            different skills and ideas to the team.
+            We value creativity, communication, and
+            teamwork. Our goal is to continue improving
+            our programming skills while building
+            projects we can be proud of.
+        </p>
+
+        <h2>Our Team Rules</h2>
+
+        <ul>
+            <li>Respect everyone's ideas and opinions.</li>
+            <li>Communicate regularly with team members.</li>
+            <li>Complete assigned tasks on time.</li>
+            <li>Help teammates when they need support.</li>
+            <li>Contribute equally to group projects.</li>
+            <li>Be open to feedback and improvements.</li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>
